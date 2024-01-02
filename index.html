@@ -14,12 +14,13 @@
   }
   .gradient2 {
     background-color: red; /* Are there any mainstream browsers that do not support gradients? */
-    background-image: linear-gradient(to bottom right, green, blue, blue, blue);
+    background-image: linear-gradient(to bottom right, green, blue);
   }
   
   .circle {
     width: 100px;
     height: 100px;
+    border-color: white;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
@@ -28,9 +29,8 @@
   .roundedcorners {
     border-radius: 10px;
     border-color: white;
-    background: #73AD21;
     padding: 20px; 
-    width: 120px;
+    width: 140px;
     height: 150px;  
   }
   
@@ -83,16 +83,16 @@
   </div>
   <div class="col-1 card">
     <div class="roundedcorners gradient1">
-      <p class="text">Card 2</p>
       <p class="circle gradient2 text">Icon 2</p>
+      <p class="text">Card 2</p>
       <p class="text">Points</p>
     </div>
   </div>
   <div class="col-1 card">
     <div class="roundedcorners gradient1">
+      <p class="text">Points</p>
       <p class="text">Card 3</p>
       <p class="circle gradient2">Icon 3</p>
-      <p class="text">Points</p>
     </div>
   </div>
 </div>
