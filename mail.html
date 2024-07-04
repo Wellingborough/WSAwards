@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
  <!-- Wellingborough School Rewards mockup -->
- <!-- HTML email format, so table-driven with inline CSS -->
+ <!-- HTML email format; table-driven with inline CSS -->
  
  <head>  
    <meta charset="utf-8">
@@ -19,30 +19,30 @@
 
    <style>
     :root { color-scheme: light dark; supported-color-schemes: light dark; }
-    @media only screen and (max-width:600px){
-      #templateColumns{
-        width:100% !important;
-      }
+    
+    .column {
+      float: left;
+      width: 25%;
+      padding: 20px;
+    }
 
-      .templateColumnContainer{
-        display:block !important;
-        width:100% !important;
-      }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-      .columnImage{
-         height:auto !important;
-         max-width:480px !important;
-         width:100% !important;
+    /* On screens that are 992px wide or less, go from four columns to two columns */
+    @media screen and (max-width: 992px) {
+      .column {
+        width: 50%;
       }
+    }
 
-      .leftColumnContent{
-        font-size:16px !important;
-        line-height:125% !important;
-      }
-
-      .rightColumnContent{
-        font-size:16px !important;
-        line-height:125% !important;
+    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
       }
     }
    </style>
@@ -61,22 +61,18 @@
 
    <!-- Multi Column Module -->
    <table class="two-column-module" role="presentation"  id="templateColumns" style="width:100%;border:0;border-collapse:collapse;border-spacing:0;text-align:center;">
-     <tr>
+     <tr class="row">
        <!-- Column 1 -->
-       <td class="left-column column"  class="templateColumnContainer" style="width:250px;color:#12232E;padding-left:30px;">
+       <td class="column" style="width:250px;color:#12232E;padding-left:30px;">
          <img src="images/BlankAward.png" />
          <a class="columnHeading" href="#" style="color:#FFFFFF;text-decoration:none;font-size:16px;font-family:Arial,sans-serif;">
            <h3 style="padding:0px;border:1px solid #4CAF50;height:30px;">Mathematics</h3>
          </a>
          <p style="font-family: Arial, sans-serif;color: #FFFFFF;padding:0px;border:1px solid #4CAF50;">12 Merits</p>
        </td>
-   
-       <!-- Gutter -->
-       <td class="gutter" style="width:20px; padding:0;font-size:0;line-height:0;">&nbsp;
-       </td>
-
+      
       <!-- Column 2 -->
-       <td class="left-column column"  class="templateColumnContainer" style="width: 250px; color: #12232E; padding-left: 30px;">
+       <td class="column" style="width: 250px; color: #12232E; padding-left: 30px;">
          <img src="images/BlankAward2.png" />
          <a class="columnHeading" href="#" style="color: #FFFFFF; text-decoration: none; font-size: 16px; font-family: Arial, sans-serif;">
            <h3 style="padding:0px;border:1px solid #4CAF50;height:30px;">Physics</h3>
@@ -84,12 +80,8 @@
          <p style="font-family: Arial, sans-serif;color: #FFFFFF;padding:0px;border:1px solid #4CAF50;">3 Merits</p>
        </td>
 
-      <!-- Gutter -->
-       <td class="gutter" style="width: 20px; padding: 0; font-size: 0; line-height: 0;">&nbsp;
-       </td>
-
       <!-- Column 3 -->
-       <td class="left-column column"  class="templateColumnContainer" style="width: 250px; color: #12232E; padding-left: 30px;">
+       <td class="column" style="width: 250px; color: #12232E; padding-left: 30px;">
          <img src="images/BlankAward3.png" />
          <a class="columnHeading" href="#" style="color: #FFFFFF; text-decoration: none; font-size: 16px; font-family: Arial, sans-serif;">
            <h3 style="padding:0px;border:1px solid #4CAF50;height:30px;">History</h3>
@@ -97,12 +89,8 @@
          <p style="font-family: Arial, sans-serif;color: #FFFFFF;padding:0px;border:1px solid #4CAF50;">5 Merits</p>
        </td>
      
-      <!-- Gutter -->
-       <td class="gutter" style="width: 20px; padding: 0; font-size: 0; line-height: 0;">&nbsp;
-       </td>
-
        <!-- Column 4 -->             
-       <td class="right-column column" class="templateColumnContainer" style="width: 250px; color: #12232E; padding-right: 30px;">
+       <td class="column"style="width: 250px; color: #12232E; padding-right: 30px;">
          <img src="images/BlankAward4.png" />
          <a class="columnHeading" href="#" style="color: #FFFFFF; font-size: 16px; font-family: Arial, sans-serif;">
            <h3 style="padding:0px;border:1px solid #4CAF50;height:30px;">Computer Science</h3>
