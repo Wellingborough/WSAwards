@@ -20,11 +20,11 @@
   <style>
     :root { color-scheme: light dark; supported-color-schemes: light dark; }
 
-    /* Default layout is for five columns */
+    /* Default layout is for ten columns */
     .column {
       float: left;
-      width: 20%;
-      padding: 20px;
+      width: 10%;
+      padding: 0px;
     }
 
     .row:after {
@@ -33,10 +33,10 @@
       clear: both;
     }
 
-    /* On screens that are 992px wide or less, go from five columns to three columns */
+    /* On screens that are 992px wide or less, go from ten columns to five columns */
     @media screen and (max-width: 992px) {
       .column {
-        width: 33%;
+        width: 20%;
       }
     }
 
@@ -46,55 +46,58 @@
         width: 100%;
       }
     }
+	
   </style>
 </head>
 <body style="background-color: #651C32;">
   <!-- Welcome Module -->
-  <table class="welcome-module" role="presentation" style="width:600px;border:0;border-collapse:collapse;border-spacing:0;">
+  <table class="welcome-module" role="presentation" style="width:600px;border:0;border-collapse:collapse;border-spacing:0;margin-top:20px">
     <tr>
       <!-- Welcome Text -->
       <td class="welcome-text" style="">
         <img src="https://wellingborough.github.io/WSAwards/images/logo_white_new.svg" width="240px" height="auto" />
-        <h1 style="font-size:24px; padding: 0; font-family: Arial, sans-serif; color:#FFFFFF; font-weight: normal;">Department Awards</h1>
       </td>
     </tr>
   </table>
+
+  <hr/>
+  <h1 style="font-size:24px; padding: 0; font-family: Arial, sans-serif; color:#FFFFFF; font-weight: normal;">Department Awards</h1>
 
   <!-- Multi Column Module -->
   <table class="two-column-module" role="presentation"  id="templateColumns" style="width:100%;border:0;border-collapse:collapse;border-spacing:0;text-align:center;">
     <tr class="row">
       <!-- Column 1 -->
-      <td class="column" style="width:250px;color:#12232E;padding-left:0px;">
+      <td class="column" style="width:180px;background-color:#11222D;padding:20px 0;margin: 10px;border:gray;border-style:double;">
         <img src="https://wellingborough.github.io/WSAwards/images/noun-math-4576147.svg" width="120px" />
         <a class="columnHeading" href="#" style="color:#FFFFFF;text-decoration:none;font-size:16px;font-family:Arial,sans-serif;margin:0px;">
-          <h3 style="padding:0px;margin:0px;">Mathematics</h3>
+          <h3 style="padding:0px;margin-top:10px;">Mathematics</h3>
         </a>
         <p style="font-family: Arial, sans-serif;color: #FFFFFF;padding:0px;margin:0px;">12 Merits</p>
       </td>
       
       <!-- Column 2 -->
-      <td class="column" style="width: 250px; color: #12232E; padding-left:0px;">
+      <td class="column" style="width: 180px; background-color: #762D43; padding:20px 0;margin: 10px;border:gray;border-style:double;">
         <img src="https://wellingborough.github.io/WSAwards/images/noun-bunsen-burner-301774.svg" width="120px"/>
         <a class="columnHeading" href="#" style="color: #FFFFFF; text-decoration: none; font-size: 16px; font-family: Arial, sans-serif;margin:0px;">
-          <h3 style="padding:0px;margin:0px;">Chemistry</h3>
+          <h3 style="padding:0px;margin-top:10px;">Chemistry</h3>
         </a>
         <p style="font-family: Arial, sans-serif;color: #FFFFFF;padding:0px;margin:0px;">3 Merits</p>
       </td>
 
       <!-- Column 3 -->
-      <td class="column" style="width: 250px; color: #12232E; padding-left:0px;">
+      <td class="column" style="width: 180px; background-color: #651C32; padding:20px 0;margin: 10px;border:gray;border-style:double;">
         <img src="https://wellingborough.github.io/WSAwards/images/noun-history-lesson-6079286.svg" width="120px" />
         <a class="columnHeading" href="#" style="color: #FFFFFF; text-decoration: none; font-size: 16px; font-family: Arial, sans-serif;margin:0px;">
-          <h3 style="padding:0px;margin:0px;">History</h3>
+          <h3 style="padding:0px;margin-top:10px;">History</h3>
         </a>
         <p style="font-family: Arial, sans-serif;color: #FFFFFF;padding:0px;margin:0px;">5 Merits</p>
       </td>
      
       <!-- Column 4 -->             
-      <td class="column"style="width: 250px; color: #12232E; padding-left:0px;">
+      <td class="column"style="width: 180px; color: #12232E; padding:20px 0;margin: 10px;border:gray;border-style:double;">
         <img src="https://wellingborough.github.io/WSAwards/images/noun-programming-6344026.svg" width="120px" />
         <a class="columnHeading" href="#" style="color: #FFFFFF; text-decoration: none; font-size: 16px; font-family: Arial, sans-serif;margin:0px;">
-          <h3 style="padding:0px;margin:0px;">Computer Science</h3>
+          <h3 style="padding:0px;margin-top:10px;">Computer Science</h3>
         </a>
         <p style="font-family: Arial, sans-serif;color: #FFFFFF;padding:0px;margin:0px;">8 Merits</p>
       </td>
@@ -102,7 +105,7 @@
   </table>
 
   <!-- Welcome Module -->
-  <table class="welcome-module" role="presentation" style="width:600px;border:0;border-collapse:collapse;border-spacing:0;">
+  <table class="welcome-module" role="presentation" style="width:600px;border:0;border-collapse:collapse;border-spacing:0;margin-top:40px">
     <tr>
       <!-- Welcome Text -->
       <td class="welcome-text" style="">
