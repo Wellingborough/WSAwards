@@ -85,6 +85,8 @@ be exported from iSAMS.
 
 Apparently not available. so we will have to create and maintain a spreadsheet of these.
 
+Although the current requirement does not have indivdual department head messages.
+
 4.  Pupil Names
 ---------------
 
